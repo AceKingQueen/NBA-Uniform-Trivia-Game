@@ -1,10 +1,9 @@
-.jumbotron {
-    background-image:url("assets/images/wood.png");
+p {
+    font-family: 'Graduate', cursive;
+    font-size: 20px;
 }
 
 
 h1 {
     color: blue;
-    font-family: 'Graduate', cursive;
-
 }

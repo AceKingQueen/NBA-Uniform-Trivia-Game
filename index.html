@@ -11,9 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
-
-
-
 </head>
 
 <body>
@@ -28,16 +25,32 @@
       <hr class="my-4">
       <p>You will have 60 seconds to choose all 10 players.</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Start playing</a>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Start playing</a> -->
       </p>
     </div>
 
-    <div class="game-container">
-      <h2>Form control: inline radio buttons</h2>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Start Playing</button>
+
+
+<!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Timer</button> -->
+
+  <section class="stats">
+    <div id="correct-answer">Correct</div>
+    <div id="incorrect-answer">Incorrect</div>
+    <div id="countdown">Countdown</div>
+
+
+  </section>  
+
+
+
+    <div class="game-container-row">
+      <!-- <h2>Let's Do This</h2> -->
+      <div class="col-lg-6">
       <p>#35</p>
       <form>
         <label class="radio-inline">
-          <input type="radio" name="optradio" id="correct"> Kevin Durant
+          <input type="radio" name="optradio" class="correct"> Kevin Durant
         </label>
         <label class="radio-inline">
           <input type="radio" name="optradio" class="incorrect"> Bob Cousy
@@ -45,34 +58,31 @@
         <label class="radio-inline">
           <input type="radio" name="optradio" class="incorrect"> Clyde Drexler
         </label>
+
+      </div><!--end of column 1-->
+
+      <div class="col-lg-6">
+          <p>#21</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Pete Maravich
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Tim Duncan
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Chris Paul
+            </label>
+    
+          </div><!--end of column 2-->
+    
+
+
+
       </form>
-    </div> <!--.game-container-->
+  </div> <!--.game-container-->
 
 
-
-    <!-- Default dropright button -->
-    <!-- <div class="btn-group dropright">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropright
-    </button>
-    <div class="dropdown-menu">
-      <! Dropdown menu links -->
-    <!-- </div>
-  </div>
-  
-  Split dropright button -->
-    <!-- <div class="btn-group dropright">
-    <button type="button" class="btn btn-secondary">
-      Split dropright
-    </button>
-    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropright</span>
-    </button>
-    <div class="dropdown-menu">
-      <!-- Dropdown menu links -->
-  </div>
-  </div>
-  </div>
 
 
 </body>
