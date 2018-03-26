@@ -1,9 +1,24 @@
 p {
     font-family: 'Graduate', cursive;
-    font-size: 20px;
+    font-size: 40px;
+    text-align: center;
 }
 
+form {
+    margin: 3%;
+    /* padding: 5%; */
+}
+
+.game-container {
+    margin: 5%;
+
+}
 
 h1 {
     color: blue;
 }
+
+/* .stats {
+    display: none;
+} */
+

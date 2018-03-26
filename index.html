@@ -19,50 +19,43 @@
   <div class="container-fluid">
 
     <div class="jumbotron">
-      <img src="assets/images/nba-logo.png" alt="NBA logo" height="400px" width="200px" />
+      <img id="logo" src="assets/images/nba-logo.png" alt="NBA logo" height="100px" width="50px" />
       <h1 class="display-4">Uniform Trivia</h1>
-      <p class="lead">Test your NBA knowledge by matching the jersey number below with the NBA great.</p>
+      <h4 class="lead">Test your NBA knowledge by matching the jersey number below with the NBA great.</h4>
       <hr class="my-4">
-      <p>You will have 60 seconds to choose all 10 players.</p>
-      <p class="lead">
-        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Start playing</a> -->
-      </p>
+      <h3>You will have 60 seconds to choose all 10 players.</h3>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Start Playing</button>
+      <div id="countdown">Countdown</div>
+      <h3 id="time-left"></h3>
+      <section class="stats">
+        <div id="correct-answer">Correct</div>
+        <!-- <div id="incorrect-answer">Incorrect</div> -->
+      </section>
+
+
     </div>
 
-    <button type="button" class="btn btn-primary btn-lg btn-block">Start Playing</button>
 
+    <!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Timer</button> -->
 
-<!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Timer</button> -->
+    <div class="game-container">
+      <div class="row">
+        <div>
+          <p class- "col-md-6">#35</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Kevin Durant</label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Kareem Abdul-Jabbar
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Clyde Drexler
+            </label>
+          </form>
+        </div>
 
-  <section class="stats">
-    <div id="correct-answer">Correct</div>
-    <div id="incorrect-answer">Incorrect</div>
-    <div id="countdown">Countdown</div>
-
-
-  </section>  
-
-
-
-    <div class="game-container-row">
-      <!-- <h2>Let's Do This</h2> -->
-      <div class="col-lg-6">
-      <p>#35</p>
-      <form>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="correct"> Kevin Durant
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="incorrect"> Bob Cousy
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="optradio" class="incorrect"> Clyde Drexler
-        </label>
-
-      </div><!--end of column 1-->
-
-      <div class="col-lg-6">
-          <p>#21</p>
+        <div>
+          <p class="col-md-6">#21</p>
           <form>
             <label class="radio-inline">
               <input type="radio" name="optradio" class="incorrect"> Pete Maravich
@@ -73,14 +66,142 @@
             <label class="radio-inline">
               <input type="radio" name="optradio" class="incorrect"> Chris Paul
             </label>
-    
-          </div><!--end of column 2-->
-    
+          </form>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div>
+          <p class- "col-md-6">#32</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Larry Bird
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Magic Johnson
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Scottie Pippen
+            </label>
+          </form>
+        </div>
+        <div>
+          <p class="col-md-6">#2</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Steve Nash
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Kyrie Irving
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Clyde Drexler
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <p class- "col-md-6">#3</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Julius Erving
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Allen Iverson
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> James Harden
+            </label>
+          </form>
+        </div>
+        <div>
+          <p class="col-md-6">#50</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Kevin Garnett
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> David Robinson
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Kobe Bryant
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <p class- "col-md-6">#23</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Patrick Ewing
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Michael Jordan
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Anthony Davis
+            </label>
+          </form>
+        </div>
+        <div>
+          <p class="col-md-6">#30</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Larry Bird
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Steph Curry
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Carmelo Anthony
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <p class- "col-md-6">#0</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Isaiah Thomas
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Russell Westbrook
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Draymond Green
+            </label>
+          </form>
+        </div>
+        <div>
+          <p class="col-md-6">#41</p>
+          <form>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Karl Malone
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="correct"> Dirk Nowitski
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" class="incorrect"> Kawhi Leonard
+            </label>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- end of game-container-->
+
+  </div>
 
 
 
-      </form>
-  </div> <!--.game-container-->
+
 
 
 

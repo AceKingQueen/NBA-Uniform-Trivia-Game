@@ -1,17 +1,27 @@
-
-//display jersey # and player as a switch? or just type in?
-//each button has jersey number - format as table? Would that be easiest?
-//Decide how to present options.
-
-//have separate array of wrong nba names to add as options, get one random old school name then a second random new school name
-
-//timer on start button that ends game after 60 seconds
-
 // JavaScript function that wraps everything, load HTML first
 $(document).ready(function() {
 
+// 1) start to begin timer and reveal questions : gameStart
+//on button click, timer starts
+$(".btn btn-primary btn-lg btn-block").on("click", function() {
+    alert("you clicked");
+    // $(".game-questions").show();
+});
+
+// 2) countdown to 60 seconds and ability to choose : gamePlay
 
 
+
+
+
+
+
+
+
+
+
+// 3) final screen with tally : finalScreen
+var x = 0;
 var wins = 0;
 var losses = 0;
 
@@ -29,9 +39,6 @@ $(".incorrect").on("click", function() {
     console.log(losses);
 })
 
-//tally & display score
-$("#correct-answer").text("You got " + wins + " correct.");
-$("#incorrect-answer").text("You got " + losses + " incorrect.");
 
 
 //timers with warning at 10 & 5 seconds left
@@ -55,11 +62,6 @@ var number = 60;
 
 var intervalId;
 
-
-//on button click, timer starts
-// $(".btn btn-primary btn-lg btn-block").on("click", run()
-// );
-
 function run() {
     clearInterval(intervalId);
     intervalId = setInterval(decrement, 1000);
@@ -69,6 +71,12 @@ function stop() {
     clearInterval(intervalId);
 }
 
+//show final screen
+function finalScreen() {
+
+}
+
+
 function decrement() {
     number--;
     $("#countdown").html("Time Remaining: " + number + " seconds");
@@ -76,7 +84,11 @@ function decrement() {
     //have countdown stop at zero
     if (number === 0) {
         stop();
-        timeUp()
+        timeUp();
+        finalScreen();
+        $("#correct-answer").text("You got " + wins + " out of 10 correct.");
+        // $("#incorrect-answer").text("You got " + losses + " incorrect.");
+
 ;    }
 }
 
