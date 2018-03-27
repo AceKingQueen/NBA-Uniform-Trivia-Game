@@ -19,24 +19,21 @@ body {
 
 p {
     font-family: 'Graduate', cursive;
-    font-size: 40px;
-}
-
-form {
-    margin: 3%;
-    /* padding: 5%; */
+    font-size: 60px;
+    color: navy;
 }
 
 .game-container {
-    margin: 5%;
     border: solid 1px black;
     display: none;
-    padding-left: 15%;
     text-align: center;
-    background-color: goldenrod;
+    color: white;
+    background-color: #856733;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     position: absolute;
     top: 50px;
-
+    width: 75%;
 }
 
 h1 {
@@ -47,3 +44,17 @@ h1 {
     display: none;
 }
 
+/* .radio-pink [type="radio"]:checked+label:after {
+    border-color: #e91e63;
+    background-color: #e91e63;
+}
+/*Gap*/
+
+/* .radio-pink-gap [type="radio"].with-gap:checked+label:before {
+    border-color: #e91e63;
+}
+
+.radio-pink-gap [type="radio"]:checked+label:after {
+    border-color: #e91e63;
+    background-color: #e91e63; */
+}  
