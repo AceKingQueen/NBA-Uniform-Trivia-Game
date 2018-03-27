@@ -1,7 +1,6 @@
 p {
     font-family: 'Graduate', cursive;
     font-size: 40px;
-    text-align: center;
 }
 
 form {
@@ -11,6 +10,11 @@ form {
 
 .game-container {
     margin: 5%;
+    border: solid 1px black;
+    display: none;
+    padding-left: 15%;
+    text-align: center;
+    background-image: url("assets/images/wood.png");
 
 }
 
@@ -18,7 +22,7 @@ h1 {
     color: blue;
 }
 
-/* .stats {
+.stats {
     display: none;
-} */
+}
 

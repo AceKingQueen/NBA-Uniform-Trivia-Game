@@ -1,14 +1,17 @@
 // JavaScript function that wraps everything, load HTML first
 $(document).ready(function() {
 
-// 1) start to begin timer and reveal questions : gameStart
+
+    
+// 1) Press start to begin timer and reveal questions : gameStart
 //on button click, timer starts
-$(".btn btn-primary btn-lg btn-block").on("click", function() {
-    alert("you clicked");
-    // $(".game-questions").show();
+$("body").on("click", ".start-button", function() {
+  
+    $(".game-container").show();
+    run();
 });
 
-// 2) countdown to 60 seconds and ability to choose : gamePlay
+// 2) countdown to 60 seconds and ability to choose
 
 
 
@@ -42,37 +45,34 @@ $(".incorrect").on("click", function() {
 
 
 //timers with warning at 10 & 5 seconds left
-setTimeout(fiveSeconds, 1000 * 50);
-setTimeout(tenSeconds, 1000 * 55);
+setTimeout(fiveSeconds, 1000 * 20);
 
 function fiveSeconds() {
-    $("#time-left").append("<h2>10 Seconds Left!</h2>");
-  }
-
-function tenSeconds() {
     $("#time-left").append("<h2>5 Seconds Left!</h2>");
   }
 
 function timeUp() {
   $("#time-left").append("<h2>Time's Up!</h2>");
+
 }
 
 //timer displaying countdown
-var number = 60;
+var number = 24;
 
-var intervalId;
+var theClock;
 
 function run() {
-    clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
+    clearInterval(theClock);
+    theClock = setInterval(decrement, 1000);
 }
 
 function stop() {
-    clearInterval(intervalId);
+    clearInterval(theClock);
 }
 
 //show final screen
 function finalScreen() {
+    $(".stats").show();
 
 }
 
@@ -87,11 +87,10 @@ function decrement() {
         timeUp();
         finalScreen();
         $("#correct-answer").text("You got " + wins + " out of 10 correct.");
-        // $("#incorrect-answer").text("You got " + losses + " incorrect.");
 
-;    }
+    }
 }
 
-run();
+
 
 })
