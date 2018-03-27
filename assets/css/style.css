@@ -9,7 +9,7 @@ body {
 
 .jumbotron {
     position: absolute;
-    top: 80px;
+    top: 50px;
     text-align: right;
     width: 500px;
     right: 0;
@@ -19,7 +19,7 @@ body {
 
 p {
     font-family: 'Graduate', cursive;
-    font-size: 60px;
+    font-size: 40px;
     color: navy;
 }
 
@@ -32,8 +32,10 @@ p {
     background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     position: absolute;
-    top: 50px;
-    width: 75%;
+    top: 10px;
+    width: 30%;
+    margin-left: 10%;
+    padding-left: 3%;
 }
 
 h1 {
@@ -42,8 +44,13 @@ h1 {
 
 .stats {
     display: none;
+    color: orangered;
 }
 
+#countdown {
+    color: red;
+    margin-top: 3%;
+}
 /* .radio-pink [type="radio"]:checked+label:after {
     border-color: #e91e63;
     background-color: #e91e63;
